@@ -20,29 +20,19 @@ text interface so you can specify what exactly you want to do.
 
 When you run the program it will ask you what method you want to use, type:
 
-⦁
+⦁ '1' for genetic algorithm.
 
-⦁
-
-'1' for genetic algorithm.
-
-'2' for greedy approach.
+⦁ '2' for greedy approach.
 
 Then it will ask you for the result format you prefer:
 
-⦁
+⦁ 'p' for printing out the results in a Google HashCode format to stdout.
 
-'p' for printing out the results in a Google HashCode format to stdout.
-
-⦁
-
-'s' for writing (saving) the results in a Google HashCode format to file results.txt (this
+⦁ 's' for writing (saving) the results in a Google HashCode format to file results.txt (this
 
 type is particularly useful as sometimes stdout is not able to show the whole result at once)
 
-⦁
-
-'os' for returning only the score of all supplied books.
+⦁ 'os' for returning only the score of all supplied books.
 
 Next it will ask for specifying what input file to use, type 'a', 'b', 'c', 'd', 'e', or 'f' for file you want
 
@@ -55,8 +45,6 @@ to test given algorithm against, if you want to test it against new file first o
 algorithm if you want.
 
 When type of presenting results will be specified as 'p' or 'os', results will be shown between:
-
-
 
 
 
@@ -74,9 +62,7 @@ There are also timers implemented, time for algorithm to run is 5 minutes for an
 
 reading file, and printing/saving solution):
 
-⦁
-
-**For Genetic Algorithm:**
+⦁ **For Genetic Algorithm:**
 
 There is an upper bound limit of epochoes equal to 400, which for most problem
 
@@ -84,9 +70,7 @@ instances is a way too much. Bounds can be changed in code, in function calculat
 
 also a timer, which after 5 minutes ends at the current epoch and returns the best solution.
 
-⦁
-
-**For Greedy:**
+⦁ **For Greedy:**
 
 If the specified time pass it will return the solution found so far and finish its execution,
 
@@ -96,9 +80,7 @@ If the specified time pass it will return the solution found so far and finish i
 
 **what are the advantages:**
 
-⦁
-
-**Genetic Algorithm:**
+⦁ **Genetic Algorithm:**
 
 It was chosen mostly because at first it seemed that it might be effective enough for the
 
@@ -108,9 +90,7 @@ would be best fitted for this task. During the creation of the program it turned
 
 cannot make this program to work fast enough to produce very good results. Second one is,
 
-⦁
-
-**Greedy:**
+⦁ **Greedy:**
 
 It​was​chosen​as​we​thought​it​would​be​a​good​move​to​implement​some​"simple​-idea"
 
@@ -140,9 +120,7 @@ approximation​. For​more​explanation​of​how​it​works​see​in​
 
 **Implementation part – a description how the algorithm was implemented:**
 
-⦁
-
-**Genetic Algorithm(GA):**
+⦁ **Genetic Algorithm(GA):**
 
 In the first approach, while we had not yet understood the nature of the problem
 
@@ -196,37 +174,25 @@ size. Firstly, we create a random initial population, calculate their fitness, a
 
 “epoch” look like this:
 
-●
+● Repeat for number of new child/2:
 
-Repeat for number of new child/2:
+    ○   Using tournament selection with parameter k - tournament size(tournament
 
-○
+        relies on choosing k candidates at random, and then choosing the best one from
 
-Using tournament selection with parameter k - tournament size(tournament
+         them ) choose 2 parents among the starting population.
 
-relies on choosing k candidates at random, and then choosing the best one from
+    ○   Perform operation of crossover on chosen parents, which create two new childs,
 
-them ) choose 2 parents among the starting population.
+        which gonna be added to population
 
-○
-
-Perform operation of crossover on chosen parents, which create two new childs,
-
-which gonna be added to population
-
-●
-
-For each member of the new population perform mutation operation with mutation
+● For each member of the new population perform mutation operation with mutation
 
 probability rate.
 
-●
+● Calculate new fitnesses and sort new population.
 
-●
-
-Calculate new fitnesses and sort new population.
-
-Cut the new population to parameter size of population.
+● Cut the new population to parameter size of population.
 
 Crossover population looks like this:
 
@@ -248,9 +214,7 @@ sometimes shuffle all. We also added Special mutation for large examples, in whi
 
 to instead of adding one element, we will add a bunch of.
 
-⦁
-
-**Greedy:**
+⦁ **Greedy:**
 
 First approach was implemented in a way that while iterating through all available days
 
@@ -316,9 +280,7 @@ so if there is 3000 days, new order of libraries will be determined each 3 libra
 
 **Conclusion and sources (literature and webpages used):**
 
-⦁
-
-**Genetic Algorithm:**
+⦁ **Genetic Algorithm:**
 
 Knowledge learnt from Artificial Life Lectures with dr hab. inż.
 
@@ -338,9 +300,7 @@ Crossover idea from: “Crossover Operators in Genetic Algorithms: a Review'' by
 
 and P.D. Sheth(2015).
 
-⦁
-
-**Greedy:**
+⦁ **Greedy:**
 
 Knowledge learnt from Data Structures with dr. inż. Grzegorz Pawlak (second semester,
 
