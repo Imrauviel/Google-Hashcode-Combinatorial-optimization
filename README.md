@@ -92,31 +92,27 @@ cannot make this program to work fast enough to produce very good results. Secon
 
 ⦁ **Greedy:**
 
-It​was​chosen​as​we​thought​it​would​be​a​good​move​to​implement​some​"simple​-idea"
+It was chosen as we thought it​ would​ be​ a ​good​ move ​to​ implement​ some​ "simple​ -idea"
 
-algorithm​to​test​against​genetic​one​and​compare​. His​biggest​advantage​is​simplicity​and
+algorithm​ to ​test ​against ​genetic​ one ​and ​compare ​. His ​biggest ​advantage​ is​ simplicity​ and
 
+determinism​ (in ​opposition​ to​ genetic​ one)​, so​ if ​efficient​ heuristic​ will​ be​ found ​then ​results ​will
 
+always​ be​ good​. We ​anticipated​ the​ algorithm ​itself ​would ​not​ be ​hard ​to​ code​ and​c ertainly​ it
 
+wasn't ​(only​ at​ the ​beginning​), but ​its​ first​ versions​ did ​not​ even ​manage ​to​ finish​ example ​c ​or ​d
 
+on ​time​, and​ results​ for​ all​ of​ them ​together​ was ​terrible​ (less ​than ​8​ million​). Later​ on​ when​ we
 
-determinism​(in​opposition​to​genetic​one)​, so​if​efficient​heuristic​will​be​found​then​results​will
+were​ changing ​its ​performance​ and​ heuristic​ it suddenly​ turned​ out​ it​ can​ do ​better ​than
 
-always​be​good​. We​anticipated​the​algorithm​itself​would​not​be​hard​to​code​and​certainly​it
+genetics​, so​ we ​decided ​to ​spend ​more​ time ​developing ​it ​for ​the ​best​ possible​ score​. Greedy
 
-wasn't​(only​at​the​beginning​), but​its​first​versions​did​not​even​manage​to​finish​example​c​or​d
+works ​in​ a way​ that​ each​ step​ it​ takes​ the​ best ​(according​ to​ its​ heuristics​) option , that​ of​ course
 
-on​time​, and​results​for​all​of​them​together​was​terrible​(less​than​8​million​). Later​on​when​we
+does​ not​ imply​ that​ the​ overall​ solution​w ill​ be​ the ​best​ possible​, still​ it ​is ​only​ heuristic​ , so
 
-were​changing​its​performance​and​heuristic​it​suddenly​turned​out​it​can​do​better​than
-
-genetics​, so​we​decided​to​spend​more​time​developing​it​for​the​best​possible​score​. Greedy
-
-works​in​a​way​that​each​step​it​takes​the​best​(according​to​its​heuristics​) option​, that​of​course
-
-does​not​imply​that​the​overall​solution​will​be​the​best​possible​, still​it​is​only​heuristic​, so
-
-approximation​. For​more​explanation​of​how​it​works​see​in​Implementation​part​-> Greedy​.
+approximation​. For​ more​ explanation ​of​ how​ it​ works​ see​ in​ Implementation​ part​-> Greedy​.
 
 **Implementation part – a description how the algorithm was implemented:**
 
